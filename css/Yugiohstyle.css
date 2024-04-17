@@ -1,0 +1,86 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
+  margin: 80px 0;
+}
+
+body{
+  text-align: center;
+  background-image: url("../assets/nenuphar.jpg");
+  background-size: 100%;
+}
+
+.presentation{
+  border: solid black;
+  background-color: rgb(59, 109, 64);
+  border-radius: 10%;
+}
+.box {
+    margin: 80px 0;
+    background-color: transparent;
+    width: 220px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .box:hover .box-inner {
+    transform: rotateY(180deg);
+  }
+  .box-front,
+  .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .box-front {
+    color: #111111;
+  }
+  .box-back {
+    transform: rotateY(180deg);
+  }
+
+  .navbar-nav {
+    box-sizing: border-box;
+    background-color: rgba(96, 175, 130, 0.74);
+    color: rgb(36, 95, 61);
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+
+.nav-item {
+    box-sizing: border-box;
+    height: 15vh;
+    text-align: center;
+    padding: 5.5vh;
+    width: 100%;
+    font-size: 3.5vh;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-item a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav-item:hover {
+    background-color: rgba(96, 175, 130, 0.521);
+    color: rgb(152, 207, 176);
+    cursor: pointer;
+} 
