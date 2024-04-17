@@ -17,6 +17,7 @@ h1 {
     font-size: 8vh;
     font-family: 'Times New Roman', Times, serif;
     margin: 4vh;
+    margin-bottom: 6vh;
 }
 
 section {
@@ -96,4 +97,9 @@ img {
     height: 100%;
     border-radius: 2%;
     object-fit: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
