@@ -101,3 +101,8 @@
   .card-wrapper:nth-child(even) .card-back {
     background-color: #1a2f42;
   }
+
+.card-back img {
+    width: 100%;
+    height: 100%;
+}
