@@ -1,0 +1,34 @@
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+    margin: 80px 0;
+    background-color: transparent;
+    width: 220px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .box:hover .box-inner {
+    transform: rotateY(180deg);
+  }
+  .box-front,
+  .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .box-front {
+    color: #111111;
+  }
+  .box-back {
+    transform: rotateY(180deg);
+  }
