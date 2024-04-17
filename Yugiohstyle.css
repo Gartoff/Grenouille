@@ -7,7 +7,14 @@
 
 body{
   text-align: center;
-  background-color: greenyellow;
+  background-image: url("assets/nénuphar.jpg");
+  background-size: 100%;
+}
+
+.presentation{
+  border: solid black;
+  background-color: rgb(59, 109, 64);
+  border-radius: 10%;
 }
 .box {
     margin: 80px 0;
