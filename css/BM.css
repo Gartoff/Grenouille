@@ -33,7 +33,7 @@ img {
     width: 30%; /* Largeur de l'image */
     height: auto;
     border-radius: 2%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 div > p {
@@ -64,4 +64,8 @@ h2 {
 .divider {
     margin-top: 0;
     color: rgb(152, 207, 176);;
+}
+
+section:last-of-type p {
+    font-size: 2.6vh;
 }
